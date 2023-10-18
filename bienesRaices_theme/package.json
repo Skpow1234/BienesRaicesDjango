@@ -1,0 +1,14 @@
+{
+  "name": "bienes_raices",
+  "version": "1.0.0",
+  "description": "Website venta bienes raices",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/assets/css/ --recursive"
+  },
+  "author": "Juan Hurtado",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
