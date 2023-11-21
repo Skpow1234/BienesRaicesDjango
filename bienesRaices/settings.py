@@ -90,5 +90,5 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
-STATICFILES_DIRS = [BASE_DIR / "static"] # new
+STATICFILES_DIRS = [BASE_DIR / "/bienesRaices/static"] # new
 STATIC_ROOT = BASE_DIR / "staticfiles" # new
