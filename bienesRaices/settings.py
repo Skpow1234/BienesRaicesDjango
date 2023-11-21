@@ -91,4 +91,4 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = os.path.join(BASE_DIR, 'whitenoise.storage.CompressedManifestStaticFilesStorage')
