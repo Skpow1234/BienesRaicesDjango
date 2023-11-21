@@ -77,7 +77,7 @@ USE_L10N = True
 USE_TZ = True
 STATIC_ROOT= os.path.join(BASE_DIR, 'static', 'templates')
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'bienesRaices/static')
 ]
@@ -91,3 +91,4 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
