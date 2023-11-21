@@ -19,3 +19,5 @@ tomlkit
 wrapt
 dj-database-url
 gunicorn
+whitenoise
+Brotli
