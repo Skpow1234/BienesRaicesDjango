@@ -26,6 +26,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 ROOT_URLCONF = 'bienesRaices.urls'
 TEMPLATES = [
@@ -55,7 +56,6 @@ DATABASES = {
 }
 
 DATABASES['default'] = dj_database_url.parse("postgres://tenderdb_user:eAlSDM5lwdmoW5kkjtL7vRAC5dA4m6iq@dpg-cle5cp7pc7cc73eldgeg-a.oregon-postgres.render.com/tenderdb")
-#postgres://tenderdb_user:eAlSDM5lwdmoW5kkjtL7vRAC5dA4m6iq@dpg-cle5cp7pc7cc73eldgeg-a.oregon-postgres.render.com/tenderdb
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -90,3 +90,4 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
