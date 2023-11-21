@@ -1,8 +1,6 @@
 __pycache__
 media
 venv/
-/static
-/media
 .venv
 .vscode
 __pycache__/
