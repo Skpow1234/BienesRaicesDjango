@@ -20,3 +20,5 @@ wrapt
 dj-database-url
 gunicorn
 django_heroku
+whitenoise
+Brotli
