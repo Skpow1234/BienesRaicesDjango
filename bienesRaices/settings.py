@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ubsq#xai!qa_!dsi=61a&mbqn)lxtl*x48$fi0v-l^k%0z1^bn'
 DEBUG = True
@@ -53,6 +54,8 @@ DATABASES = {
     }
 }
 
+DATABASES['default'] = dj_database_url.parse("postgres://tenderdb_user:eAlSDM5lwdmoW5kkjtL7vRAC5dA4m6iq@dpg-cle5cp7pc7cc73eldgeg-a.oregon-postgres.render.com/tenderdb")
+#postgres://tenderdb_user:eAlSDM5lwdmoW5kkjtL7vRAC5dA4m6iq@dpg-cle5cp7pc7cc73eldgeg-a.oregon-postgres.render.com/tenderdb
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
