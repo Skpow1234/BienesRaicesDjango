@@ -3,7 +3,7 @@ import dj_database_url
 import django_heroku
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ubsq#xai!qa_!dsi=61a&mbqn)lxtl*x48$fi0v-l^k%0z1^bn'
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
