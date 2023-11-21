@@ -1,0 +1,1 @@
+gunicorn bienesRaices.wsgi:application

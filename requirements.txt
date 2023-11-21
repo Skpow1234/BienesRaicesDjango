@@ -21,3 +21,4 @@ dj-database-url
 gunicorn
 whitenoise
 Brotli
+django_heroku
