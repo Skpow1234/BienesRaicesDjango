@@ -18,3 +18,4 @@ sqlparse
 tomlkit
 wrapt
 dj-database-url
+gunicorn
